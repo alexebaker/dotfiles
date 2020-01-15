@@ -8,6 +8,7 @@ if [[ $OSTYPE =~ "linux" ]] ; then
     LS="ls"
 elif [[ $OSTYPE =~ "darwin" ]] ; then
     LS="gls"
+    alias make="gmake"
 fi
 
 LS_OPTIONS="-lhF --color=auto"

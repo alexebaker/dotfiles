@@ -11,8 +11,9 @@ else
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
 fi
 
-brew install gcc python ruby git
+brew install gcc make cmake python ruby git
 if [[ $OSTYPE =~ "darwin" ]] ; then
+    brew install gnutls
     brew install macvim --with-override-system-vim
 else
     brew install vim
